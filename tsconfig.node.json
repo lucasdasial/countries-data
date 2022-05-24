@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "composite": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "baseUrl": "./src",
+    "paths": { "pages/*": ["pages/*"], "@/*": ["./src/*"] }
+  },
+  "include": ["vite.config.ts"]
+}
