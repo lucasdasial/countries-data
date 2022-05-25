@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import TheHeader from "../components/TheHeader.vue";
-import BaseButton from "../components/BaseButton.vue";
+import BaseButton from "../components/ButtonBase.vue";
 import TheFooter from "../components/TheFooter.vue";
 </script>
 

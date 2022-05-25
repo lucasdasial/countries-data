@@ -11,21 +11,15 @@
 h1,h2,h3,p{
   margin: 0;
 }
-button{
+button, select {
   background: transparent;
   border: none;
 }
-
-
-
-
 
 body {
   min-height: 100vh;
   
   background: var(--color-dark-1);
-
-
 
   transition: color 0.5s, background-color 0.5s;
   line-height: 1.6;
@@ -36,8 +30,6 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
-
 
 .max-w{
   max-width: 1366px;
