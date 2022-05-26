@@ -1,11 +1,22 @@
 import { createRouter, createWebHistory } from "vue-router";
 
-import teste from "pages/HomePage.vue";
+import teste from "pages/LandingPage.vue";
 
 const routes = [
   {
     path: "/",
-    component: () => import("pages/HomePage.vue"),
+    redirect: "/landing",
+    component: () => import("../layouts/MainLayout.vue"),
+    children: [
+      {
+        path: "/landing",
+        component: () => import("pages/LandingPage.vue"),
+      },
+      {
+        path: "/app",
+        component: () => import("pages/AppPage.vue"),
+      },
+    ],
   },
 ];
 
