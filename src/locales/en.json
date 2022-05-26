@@ -1,0 +1,20 @@
+{
+  "labels": {
+    "discover": "Discover",
+    "explorer": "Explorer"
+  },
+
+  "footer": {
+    "test": "Front-end test"
+  },
+
+  "homepage": {
+    "hello": "Hello!",
+    "landing": {
+      "subtitle": "Find what you're looking for about countries here."
+    },
+    "worldmap": {
+      "text": "Discover information and curiosities about countries around the world"
+    }
+  }
+}

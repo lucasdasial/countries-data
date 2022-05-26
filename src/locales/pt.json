@@ -1,0 +1,21 @@
+{
+  "labels": {
+    "discover": "Discobrir",
+    "explorer": "Explorar"
+  },
+
+  "footer": {
+    "test": "Teste front-end"
+  },
+
+  "homepage": {
+    "hello": "Ola!",
+    "landing": {
+      "subtitle": "Ache o que procura sobre os países aqui."
+    },
+
+    "worldmap": {
+      "text": "Descubra informações e curiosidades sobre países ao redor do mundo"
+    }
+  }
+}

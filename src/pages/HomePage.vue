@@ -2,18 +2,23 @@
 import TheHeader from "../components/TheHeader.vue";
 import BaseButton from "../components/ButtonBase.vue";
 import TheFooter from "../components/TheFooter.vue";
+
+import { useI18n } from "vue-i18n";
+
+const { t } = useI18n();
 </script>
 
 <template>
   <TheHeader class="max-w" />
   <main class="main max-w">
     <section class="landing_section">
+      <p>{{ t("homepage.hello") }}</p>
       <h1>HABITUE</h1>
       <h2>Contries info</h2>
-      <p>Ache o que procura sobre os países aqui.</p>
+      <p>{{ t("homepage.landing.subtitle") }}</p>
 
       <section class="call__action">
-        <BaseButton :label="'Explorar'" />
+        <BaseButton :label="t('labels.explorer')" />
       </section>
     </section>
 
@@ -25,10 +30,8 @@ import TheFooter from "../components/TheFooter.vue";
   <section class="world__map__section max-w">
     <div class="wrap">
       <img src="src/assets/svgs/world_map.svg" />
-      <p>
-        Descubra informações e curiosidades sobre países ao redor do mundo 🌎.
-      </p>
-      <BaseButton :label="'Descobrir'" />
+      <p>{{ t("homepage.worldmap.text") }} 🌎.</p>
+      <BaseButton :label="t('labels.discover')" />
     </div>
   </section>
 

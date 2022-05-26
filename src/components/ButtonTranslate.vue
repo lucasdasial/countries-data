@@ -1,25 +1,26 @@
 <script setup lang="ts">
-import { ChevronDownIcon, TranslateIcon } from "@heroicons/vue/solid";
+import { TranslateIcon } from "@heroicons/vue/solid";
 import { ref, watch } from "vue";
+import { useI18n } from "vue-i18n";
 
-const lang = ref(null);
-const langs = ["PT", "EN"];
+const lang = ref("");
+const langs = ["pt", "en"];
 
-watch(lang, (currentVal) => {
-  alert(currentVal);
-});
+const i18n = useI18n();
+
+watch(lang, (currentVal) => {});
 </script>
 
 <template>
   <div class="wrap">
     <TranslateIcon class="icon icon--translate" />
-    <select v-model="lang">
+    <select v-model="$i18n.locale">
       <option v-for="(lang, i) in langs">{{ lang }}</option>
     </select>
   </div>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @import "src/css/variables";
 .wrap {
   display: flex;

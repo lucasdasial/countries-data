@@ -1,3 +1,9 @@
+<script setup lang="ts">
+import { useI18n } from "vue-i18n";
+
+const { t } = useI18n();
+</script>
+
 <template>
   <footer class="footer">
     <div>
@@ -7,7 +13,7 @@
     </div>
 
     <div>
-      <h2>Teste front-end</h2>
+      <h2>{{ t("footer.test") }}</h2>
       <a href="https://instruct.com.br" target="_blank">Instruct</a>
     </div>
 
