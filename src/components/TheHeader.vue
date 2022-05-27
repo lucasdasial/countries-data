@@ -1,36 +1,16 @@
-<script lang="ts">
-import { defineComponent } from "vue";
-import { ChevronDownIcon, TranslateIcon } from "@heroicons/vue/solid";
-import Logo from "../components/Logo.vue";
-
-export default defineComponent({
-  components: {
-    Logo,
-    ChevronDownIcon,
-    TranslateIcon,
-  },
-});
+<script setup lang="ts">
+import ButtonTranslate from "../components/ButtonTranslate.vue";
 </script>
 
 <template>
   <header class="header">
-    <h1>Contries info 🌐</h1>
-
-    <button>
-      <TranslateIcon class="icon icon--translate" />
-      <ChevronDownIcon class="icon" />
-    </button>
+    <h1>Countries data 🌐</h1>
+    <ButtonTranslate />
   </header>
 </template>
 
 <style lang="scss" scoped>
-.icon {
-  width: 30px;
-  color: #02dd97;
-}
-
 .header {
-  height: 60px;
   padding: 1.6rem;
 
   display: flex;

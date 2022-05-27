@@ -1,38 +1,49 @@
 <script setup lang="ts">
-import TheHeader from "../components/TheHeader.vue";
-import BaseButton from "../components/BaseButton.vue";
-import TheFooter from "../components/TheFooter.vue";
+import BaseButton from "../components/ButtonBase.vue";
+import { useI18n } from "vue-i18n";
+import { useRouter } from "vue-router";
+
+const { t } = useI18n();
+const router = useRouter();
+
+function goToApp(): void {
+  router.push("/app");
+}
 </script>
 
 <template>
-  <TheHeader class="max-w" />
-  <main class="main max-w">
-    <section class="landing_section">
-      <h1>HABITUE</h1>
-      <h2>Contries info</h2>
-      <p>Ache o que procura sobre os países aqui.</p>
+  <main class="animate__animated animate__fadeInRight slower">
+    <main class="main max-w">
+      <section class="landing_section">
+        <p>{{ t("homepage.hello") }}</p>
+        <h1>HABITUE</h1>
+        <h2>Countries data</h2>
+        <p>{{ t("homepage.landing.subtitle") }}</p>
 
-      <section class="call__action">
-        <BaseButton :label="'Explorar'" />
+        <section class="call__action">
+          <BaseButton :label="t('label.explorer')" @click="goToApp" />
+        </section>
       </section>
-    </section>
 
-    <section class="hero__img">
-      <img src="src/assets/svgs/world.svg" />
+      <section class="hero__img">
+        <img
+          src="src/assets/svgs/world.svg"
+          alt="Imagem ilustrativa do globo"
+        />
+      </section>
+    </main>
+
+    <section class="world__map__section max-w">
+      <div class="wrap">
+        <img
+          src="src/assets/svgs/world_map.svg"
+          alt="Imagem ilustrativa do mapa mundo"
+        />
+        <p>{{ t("homepage.worldmap.text") }} 🌎.</p>
+        <BaseButton :label="t('label.discover')" @click="goToApp" />
+      </div>
     </section>
   </main>
-
-  <section class="world__map__section max-w">
-    <div class="wrap">
-      <img src="src/assets/svgs/world_map.svg" />
-      <p>
-        Descubra informações e curiosidades sobre países ao redor do mundo 🌎.
-      </p>
-      <BaseButton :label="'Descobrir'" />
-    </div>
-  </section>
-
-  <TheFooter class="max-w" />
 </template>
 
 <style lang="scss" scoped>

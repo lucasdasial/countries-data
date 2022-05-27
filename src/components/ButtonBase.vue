@@ -15,9 +15,10 @@ export default defineComponent({
 </template>
 
 <style lang="scss" scoped>
+@import "src/css/variables";
 .btn {
   cursor: pointer;
-  background: #02dd97;
+  background: var(--color-highlight);
   padding: 0.8rem 2.4rem;
   min-width: 80px;
   border-radius: 8px;
@@ -25,12 +26,12 @@ export default defineComponent({
   text-align: center;
   font-weight: 600;
   text-transform: uppercase;
-  color: #1e212b;
+  color: var(--color-dark-0);
 
   transition: 400ms;
 
   &:hover {
-    background: #1e212b;
+    background: var(--color-dark-0);
     color: white;
   }
 }

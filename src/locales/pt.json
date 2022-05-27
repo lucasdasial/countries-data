@@ -1,0 +1,41 @@
+{
+  "label": {
+    "discover": "Discobrir",
+    "explorer": "Explorar",
+    "continent": "Continente",
+    "select-cont": "Selecione um continente",
+    "idiom": "Idioma",
+    "select-idiom": "Selecione um idioma",
+    "idiom-quantity": "Quantidade de idiomas",
+    "select-quant": "Selecione um opção",
+    "select-quant-opt-one": "Apenas um idioma",
+    "select-quant-opt-more": "Mais um idioma",
+    "select-quant-opt-all": "Todos ",
+    "currency-abbreviations": "Silga da moeda",
+    "capital": "Capital",
+    "phone-code": "Codigo telefonico"
+  },
+  "continent": {
+    "sa": "America do sul",
+    "na": "America do norte",
+    "af": "Africa",
+    "as": "Asia",
+    "eu": "Europa",
+    "oc": "Oceania"
+  },
+
+  "footer": {
+    "test": "Teste front-end"
+  },
+
+  "homepage": {
+    "hello": "Ola!",
+    "landing": {
+      "subtitle": "Ache o que procura sobre os países aqui."
+    },
+
+    "worldmap": {
+      "text": "Descubra informações e curiosidades sobre países ao redor do mundo"
+    }
+  }
+}

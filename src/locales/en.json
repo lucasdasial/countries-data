@@ -1,0 +1,41 @@
+{
+  "label": {
+    "discover": "Discover",
+    "explorer": "Explorer",
+    "continent": "Continent",
+    "select-cont": "Select a continent",
+    "idiom": "Idiom",
+    "select-idiom": "Select idiom",
+    "idiom-quantity": "Idiom quantity",
+    "select-quant": "Select option",
+    "select-quant-opt-one": "Just one",
+    "select-quant-opt-more": "More than one",
+    "select-quant-opt-all": "All",
+    "currency-abbreviations": "Currency Abbreviations",
+    "capital": "Capital",
+    "phone-code": "Country Code"
+  },
+
+  "continent": {
+    "sa": "South America",
+    "na": "North America",
+    "af": "Africa",
+    "as": "Asia",
+    "eu": "Europe",
+    "oc": "Oceania"
+  },
+
+  "footer": {
+    "test": "Front-end test"
+  },
+
+  "homepage": {
+    "hello": "Hello!",
+    "landing": {
+      "subtitle": "Find what you're looking for about countries here."
+    },
+    "worldmap": {
+      "text": "Discover information and curiosities about countries around the world"
+    }
+  }
+}

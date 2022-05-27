@@ -6,7 +6,7 @@
     "module": "esnext",
     "moduleResolution": "node",
     "baseUrl": "./src",
-    "paths": { "pages/*": ["pages/*"], "@/*": ["./src/*"] }
+    "paths": { "@/*": ["src/*"] }
   },
   "include": ["vite.config.ts"]
 }

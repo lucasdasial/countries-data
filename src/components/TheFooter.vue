@@ -1,13 +1,20 @@
+<script setup lang="ts">
+import { useI18n } from "vue-i18n";
+
+const { t } = useI18n();
+</script>
+
 <template>
   <footer class="footer">
     <div>
       <h2>Contries info</h2>
-      <p>By Lucas alves</p>
-      <a href=""></a>
+      <a href="https://github.com/luccasalves" target="_blank">
+        By Lucas alves
+      </a>
     </div>
 
     <div>
-      <h2>Teste front-end</h2>
+      <h2>{{ t("footer.test") }}</h2>
       <a href="https://instruct.com.br" target="_blank">Instruct</a>
     </div>
 
@@ -33,11 +40,9 @@
   }
 
   a {
-    color: var(--color-light);
+    color: var(--color-text-highlight);
     &:hover {
       color: var(--color-highlight);
-    }
-    &:active {
     }
   }
 }
