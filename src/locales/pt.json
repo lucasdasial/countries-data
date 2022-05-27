@@ -1,7 +1,24 @@
 {
-  "labels": {
+  "label": {
     "discover": "Discobrir",
-    "explorer": "Explorar"
+    "explorer": "Explorar",
+    "continent": "Continente",
+    "select-cont": "Selecione um continente",
+    "idiom": "Idioma",
+    "select-idiom": "Selecione um idioma",
+    "idiom-quantity": "Quantidade de idiomas",
+    "select-quant": "Selecione um opção",
+    "select-quant-opt-one": "Apenas um idioma",
+    "select-quant-opt-more": "Mais um idioma",
+    "select-quant-opt-all": "Todos "
+  },
+  "continent": {
+    "sa": "America do sul",
+    "na": "America do norte",
+    "af": "Africa",
+    "as": "Asia",
+    "eu": "Europa",
+    "oc": "Oceania"
   },
 
   "footer": {

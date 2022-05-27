@@ -21,7 +21,7 @@ function goToApp(): void {
         <p>{{ t("homepage.landing.subtitle") }}</p>
 
         <section class="call__action">
-          <BaseButton :label="t('labels.explorer')" @click="goToApp" />
+          <BaseButton :label="t('label.explorer')" @click="goToApp" />
         </section>
       </section>
 
@@ -34,7 +34,7 @@ function goToApp(): void {
       <div class="wrap">
         <img src="src/assets/svgs/world_map.svg" />
         <p>{{ t("homepage.worldmap.text") }} 🌎.</p>
-        <BaseButton :label="t('labels.discover')" @click="goToApp" />
+        <BaseButton :label="t('label.discover')" @click="goToApp" />
       </div>
     </section>
   </main>

@@ -1,9 +1,11 @@
-import { useContinentStore } from "@/stores/ContinentStore";
+import { useContinentStore } from "../../stores/ContinentStore";
 import { IContinent } from "../entities/IContinent";
 import { ICountry } from "../entities/ICountry";
 import { fetchingData } from "../Graphql";
 
+const store = useContinentStore();
 export async function filterByContinent(codeContinent: string) {
+  store.setContinentCode(codeContinent);
   const query = `
   query{
     continent(code: "${codeContinent}"){
@@ -12,7 +14,6 @@ export async function filterByContinent(codeContinent: string) {
         code
         name,
         languages{
-          code,
           name
         }
       }
@@ -20,33 +21,26 @@ export async function filterByContinent(codeContinent: string) {
   }
   `;
 
-  let myContinent: IContinent;
-
   const langs: any[] = [];
-  const store = useContinentStore();
+  const countries: any[] = [];
 
   await fetchingData(query)
     .then((res) => res.json())
     .then((ob) => {
-      const t = ob.data.continent.countries;
-      t.forEach((pais: any) => {
-        console.log(pais.languages);
+      const allCountries = ob.data.continent.countries;
+      allCountries.forEach((country: any) => {
+        countries.push(country);
+
+        country.languages.forEach((lang: { name: any }) => {
+          langs.push(lang.name);
+        });
       });
+      const langsFilter = langs.filter(
+        (current, i) => langs.indexOf(current) === i
+      );
+
+      store.setLangs(langsFilter);
+      store.setCountries(countries);
+      // console.log(store.getCountries);
     });
 }
-
-// dataContinent.forEach((countries) => {
-//   countries.forEach((el: { languages: any[] }) => {
-//     el.languages.forEach((lang: any) => {
-//       langs.push(lang.name);
-//     });
-//   });
-// });
-
-// myContinent = data.data.continent;
-
-// store.setCont(myContinent);
-
-// let langsFilter = langs.filter((este, i) => langs.indexOf(este) === i);
-
-//   store.setLangs(langsFilter)

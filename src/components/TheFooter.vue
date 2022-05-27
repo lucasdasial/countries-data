@@ -43,8 +43,6 @@ const { t } = useI18n();
     &:hover {
       color: var(--color-highlight);
     }
-    &:active {
-    }
   }
 }
 </style>

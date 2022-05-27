@@ -1,7 +1,25 @@
 {
-  "labels": {
+  "label": {
     "discover": "Discover",
-    "explorer": "Explorer"
+    "explorer": "Explorer",
+    "continent": "Continent",
+    "select-cont": "Select a continent",
+    "idiom": "Idiom",
+    "select-idiom": "Select idiom",
+    "idiom-quantity": "Idiom quantity",
+    "select-quant": "Select option",
+    "select-quant-opt-one": "Just one",
+    "select-quant-opt-more": "More than one",
+    "select-quant-opt-all": "All"
+  },
+
+  "continent": {
+    "sa": "South America",
+    "na": "North America",
+    "af": "Africa",
+    "as": "Asia",
+    "eu": "Europe",
+    "oc": "Oceania"
   },
 
   "footer": {

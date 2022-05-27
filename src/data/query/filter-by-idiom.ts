@@ -1,12 +1,22 @@
 import { useContinentStore } from "@/stores/ContinentStore";
+import { filterByContinent } from "./filter-by-continent";
+
+const store = useContinentStore();
 
 export function filterByIdiom(nameLang: string) {
-  const continentStore = useContinentStore();
-  const arr: any[] = [];
-  const current = continentStore.continent.countries;
-  current.forEach((el) => {
-    arr.push(el.languages);
-  });
+  const code = store.getContinentCode;
+  filterByContinent(code);
+  console.log(store.getCountries);
 
-  console.log(arr);
+  const countries: any[] = [];
+  store.getCountries.forEach((c) => {
+    c.languages.forEach((lang: any) => {
+      if (lang.name == nameLang) {
+        console.log(c.name);
+        countries.push(c);
+      }
+    });
+  });
+  store.setCountries(countries);
+  console.log(store.getCountries);
 }

@@ -28,7 +28,7 @@ watch(lang, (currentVal) => {});
 }
 .icon {
   width: 30px;
-  color: #02dd97;
+  color: var(--color-highlight);
 }
 
 select {
