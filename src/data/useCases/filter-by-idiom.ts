@@ -1,11 +1,10 @@
-import { useContinentStore } from "@/stores/ContinentStore";
-import { filterByContinent } from "./filter-by-continent";
-
+import { useContinentStore } from "../../stores/ContinentStore";
+import { loadContinentData } from "../../data/query/continent-data";
 const store = useContinentStore();
 
 export function filterByIdiom(nameLang: string) {
   const code = store.getContinentCode;
-  filterByContinent(code);
+  loadContinentData(code);
   console.log(store.getCountries);
 
   const countries: any[] = [];

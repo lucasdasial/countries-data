@@ -4,7 +4,7 @@ import ButtonTranslate from "../components/ButtonTranslate.vue";
 
 <template>
   <header class="header">
-    <h1>Contries data 🌐</h1>
+    <h1>Countries data 🌐</h1>
     <ButtonTranslate />
   </header>
 </template>

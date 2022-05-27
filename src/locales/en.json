@@ -10,7 +10,10 @@
     "select-quant": "Select option",
     "select-quant-opt-one": "Just one",
     "select-quant-opt-more": "More than one",
-    "select-quant-opt-all": "All"
+    "select-quant-opt-all": "All",
+    "currency-abbreviations": "Currency Abbreviations",
+    "capital": "Capital",
+    "phone-code": "Country Code"
   },
 
   "continent": {

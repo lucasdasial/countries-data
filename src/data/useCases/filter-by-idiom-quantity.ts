@@ -1,11 +1,11 @@
 import { useContinentStore } from "../../stores/ContinentStore";
-import { filterByContinent } from "./filter-by-continent";
+import { loadContinentData } from "../../data/query/continent-data";
 
 const store = useContinentStore();
 
 export function filterMoreThanOneIdiom() {
   const code = store.getContinentCode;
-  filterByContinent(code);
+  loadContinentData(code);
   const countries: any[] = [];
 
   store.getCountries.forEach((c) => {
@@ -18,7 +18,7 @@ export function filterMoreThanOneIdiom() {
 
 export function filterJustOneIdiom() {
   const code = store.getContinentCode;
-  filterByContinent(code);
+  loadContinentData(code);
 
   const countries: any[] = [];
 
@@ -32,7 +32,7 @@ export function filterJustOneIdiom() {
 
 export function filterAllIdioms() {
   const code = store.getContinentCode;
-  filterByContinent(code);
+  loadContinentData(code);
 
   const countries: any[] = [];
   store.getCountries.forEach((c) => {

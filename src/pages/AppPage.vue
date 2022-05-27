@@ -4,13 +4,13 @@ import { ref } from "vue";
 import { useRouter } from "vue-router";
 import { useI18n } from "vue-i18n";
 
-import { filterByContinent } from "../data/query/filter-by-continent";
-import { filterByIdiom } from "../data/query/filter-by-idiom";
+import { loadContinentData } from "../data/query/continent-data";
+import { filterByIdiom } from "../data/useCases/filter-by-idiom";
 import {
   filterMoreThanOneIdiom,
   filterJustOneIdiom,
   filterAllIdioms,
-} from "../data/query/filter-by-idiom-quantity";
+} from "../data/useCases/filter-by-idiom-quantity";
 
 import AppSelectContinent from "../components/AppSelectContinent.vue";
 import AppSelectLang from "../components/AppSelectLang.vue";
@@ -25,12 +25,12 @@ const store = useContinentStore();
 let countries = ref();
 
 function handleClick(codeCountry: string) {
-  router.push("/" + codeCountry);
+  router.push("/country/" + codeCountry);
 }
 
 async function handleChangeContinent(code: string) {
   show.value = false;
-  await filterByContinent(code);
+  await loadContinentData(code);
   countries.value = store.getCountries;
   show.value = true;
 }

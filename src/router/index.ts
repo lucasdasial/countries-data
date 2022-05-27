@@ -1,7 +1,5 @@
 import { createRouter, createWebHistory } from "vue-router";
 
-import teste from "pages/LandingPage.vue";
-
 const routes = [
   {
     path: "/",
@@ -15,6 +13,10 @@ const routes = [
       {
         path: "/app",
         component: () => import("pages/AppPage.vue"),
+      },
+      {
+        path: "/country/:id",
+        component: () => import("pages/CountryPage.vue"),
       },
     ],
   },

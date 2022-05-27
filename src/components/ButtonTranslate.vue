@@ -33,6 +33,10 @@ watch(lang, (currentVal) => {});
 
 select {
   color: white;
-  background-color: var(--color-dark-1);
+  background-color: var(--color-dark-2);
+
+  option {
+    color: var(--color-light);
+  }
 }
 </style>

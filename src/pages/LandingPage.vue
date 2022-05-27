@@ -17,7 +17,7 @@ function goToApp(): void {
       <section class="landing_section">
         <p>{{ t("homepage.hello") }}</p>
         <h1>HABITUE</h1>
-        <h2>Contries info</h2>
+        <h2>Countries data</h2>
         <p>{{ t("homepage.landing.subtitle") }}</p>
 
         <section class="call__action">
@@ -26,13 +26,19 @@ function goToApp(): void {
       </section>
 
       <section class="hero__img">
-        <img src="src/assets/svgs/world.svg" />
+        <img
+          src="src/assets/svgs/world.svg"
+          alt="Imagem ilustrativa do globo"
+        />
       </section>
     </main>
 
     <section class="world__map__section max-w">
       <div class="wrap">
-        <img src="src/assets/svgs/world_map.svg" />
+        <img
+          src="src/assets/svgs/world_map.svg"
+          alt="Imagem ilustrativa do mapa mundo"
+        />
         <p>{{ t("homepage.worldmap.text") }} 🌎.</p>
         <BaseButton :label="t('label.discover')" @click="goToApp" />
       </div>

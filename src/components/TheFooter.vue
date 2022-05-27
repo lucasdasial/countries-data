@@ -8,8 +8,9 @@ const { t } = useI18n();
   <footer class="footer">
     <div>
       <h2>Contries info</h2>
-      <p>By Lucas alves</p>
-      <a href=""></a>
+      <a href="https://github.com/luccasalves" target="_blank">
+        By Lucas alves
+      </a>
     </div>
 
     <div>
@@ -39,7 +40,7 @@ const { t } = useI18n();
   }
 
   a {
-    color: var(--color-light);
+    color: var(--color-text-highlight);
     &:hover {
       color: var(--color-highlight);
     }

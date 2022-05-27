@@ -1,10 +1,8 @@
 import { useContinentStore } from "../../stores/ContinentStore";
-import { IContinent } from "../entities/IContinent";
-import { ICountry } from "../entities/ICountry";
-import { fetchingData } from "../Graphql";
+import { fetchingData } from "../ConnectionApi";
 
 const store = useContinentStore();
-export async function filterByContinent(codeContinent: string) {
+export async function loadContinentData(codeContinent: string) {
   store.setContinentCode(codeContinent);
   const query = `
   query{
@@ -41,6 +39,5 @@ export async function filterByContinent(codeContinent: string) {
 
       store.setLangs(langsFilter);
       store.setCountries(countries);
-      // console.log(store.getCountries);
     });
 }
