@@ -14,7 +14,7 @@ watch(lang, (currentVal) => {});
 <template>
   <div class="wrap">
     <TranslateIcon class="icon icon--translate" />
-    <select v-model="$i18n.locale">
+    <select v-model="$i18n.locale" class="select--sm">
       <option v-for="(lang, i) in langs">{{ lang }}</option>
     </select>
   </div>
