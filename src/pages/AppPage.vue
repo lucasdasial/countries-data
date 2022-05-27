@@ -17,10 +17,15 @@ import AppSelectLang from "../components/AppSelectLang.vue";
 import AppSelectQuantityLang from "../components/AppSelectQuantityLang.vue";
 import ButtonBackPage from "../components/ButtonBackPage.vue";
 
+import { useLoading } from "vue-loading-overlay";
+import "vue-loading-overlay/dist/vue-loading.css";
+
 const { t } = useI18n();
 const router = useRouter();
 const show = ref(false);
 const store = useContinentStore();
+
+const load = useLoading();
 
 let countries = ref();
 
@@ -29,9 +34,15 @@ function handleClick(codeCountry: string) {
 }
 
 async function handleChangeContinent(code: string) {
+  const loader = load.show({
+    color: "#02dd97",
+    backgroundColor: "#343249e0",
+    loader: "dots",
+  });
   show.value = false;
   await loadContinentData(code);
   countries.value = store.getCountries;
+  loader.hide();
   show.value = true;
 }
 async function handleChangeIdiom(l: string) {

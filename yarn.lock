@@ -4523,6 +4523,11 @@
     "hash-sum" "^2.0.0"
     "loader-utils" "^2.0.0"
 
+"vue-loading-overlay@^5.0.3":
+  "integrity" "sha512-6JWZalwlHF4do3HXsFZGt6PcWYseAI5FuNKpveEkljkzqskDWRr7rYmYHVx2kKu4qIvK0vLpL25T/hpFMNoevQ=="
+  "resolved" "https://registry.npmjs.org/vue-loading-overlay/-/vue-loading-overlay-5.0.3.tgz"
+  "version" "5.0.3"
+
 "vue-router@4":
   "integrity" "sha512-xa+pIN9ZqORdIW1MkN2+d9Ui2pCM1b/UMgwYUCZOiFYHAvz/slKKBDha8DLrh5aCG/RibtrpyhKjKOZ85tYyWg=="
   "resolved" "https://registry.npmjs.org/vue-router/-/vue-router-4.0.15.tgz"
