@@ -1,10 +1,15 @@
 import { defineStore } from "pinia";
 
+type Languages = {
+  name: string;
+};
+
 type Country = {
   name: string;
   capital: string;
   currency: string;
   phone: string;
+  languages: Array<Languages>;
 };
 
 type stateCountry = {

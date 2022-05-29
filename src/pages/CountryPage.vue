@@ -32,6 +32,15 @@ onBeforeMount(async () => {
       <p>
         📞 {{ t("label.phone-code") }}: <span>+{{ country.phone }} </span>
       </p>
+      <br />
+      <p>🗣️ {{ t("label.spoken-lang") }}:</p>
+      <ul>
+        <li v-for="(lang, i) in country.languages" :key="i">
+          <span>
+            {{ lang.name }}
+          </span>
+        </li>
+      </ul>
     </section>
   </main>
 </template>
@@ -47,7 +56,8 @@ main {
     font-size: 2.4rem;
   }
   .country__info {
-    p {
+    p,
+    li {
       color: var(--color-light);
       font-size: 1.2rem;
     }

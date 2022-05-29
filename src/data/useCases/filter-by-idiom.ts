@@ -7,7 +7,7 @@ export function filterByIdiom(nameLang: string) {
   loadContinentData(code);
   console.log(store.getCountries);
 
-  const countries: any[] = [];
+  const countries: Array<any> = [];
   store.getCountries.forEach((c) => {
     c.languages.forEach((lang: any) => {
       if (lang.name == nameLang) {

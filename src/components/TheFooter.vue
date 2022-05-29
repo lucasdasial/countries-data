@@ -7,7 +7,7 @@ const { t } = useI18n();
 <template>
   <footer class="footer">
     <div>
-      <h2>Contries info</h2>
+      <h2>Contries Data</h2>
       <a href="https://github.com/luccasalves" target="_blank">
         By Lucas alves
       </a>
