@@ -26,17 +26,14 @@ function goToApp(): void {
       </section>
 
       <section class="hero__img">
-        <img
-          src="src/assets/svgs/world.svg"
-          alt="Imagem ilustrativa do globo"
-        />
+        <img src="../assets/svgs/world.svg" alt="Imagem ilustrativa do globo" />
       </section>
     </main>
 
     <section class="world__map__section max-w">
       <div class="wrap">
         <img
-          src="src/assets/svgs/world_map.svg"
+          src="../assets/svgs/world_map.svg"
           alt="Imagem ilustrativa do mapa mundo"
         />
         <p>{{ t("homepage.worldmap.text") }} 🌎.</p>

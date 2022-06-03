@@ -9,11 +9,12 @@
     "idiom-quantity": "Quantidade de idiomas",
     "select-quant": "Selecione um opção",
     "select-quant-opt-one": "Apenas um idioma",
-    "select-quant-opt-more": "Mais um idioma",
+    "select-quant-opt-more": "Mais de um idioma",
     "select-quant-opt-all": "Todos ",
     "currency-abbreviations": "Silga da moeda",
     "capital": "Capital",
-    "phone-code": "Codigo telefonico"
+    "phone-code": "Codigo telefonico",
+    "spoken-lang": "línguas faladas"
   },
   "continent": {
     "sa": "America do sul",

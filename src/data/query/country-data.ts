@@ -13,6 +13,9 @@ export async function loadCountryData(codeCountry: string | string[]) {
       capital,
       currency,
       phone,
+      languages{
+        name
+      }
     }
     },
     `;
@@ -22,5 +25,6 @@ export async function loadCountryData(codeCountry: string | string[]) {
     .then((ob) => {
       const currentCountry = ob.data.country;
       countryStore.setCountry(currentCountry);
+      console.log(countryStore.getCountry);
     });
 }

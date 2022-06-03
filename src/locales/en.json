@@ -13,7 +13,8 @@
     "select-quant-opt-all": "All",
     "currency-abbreviations": "Currency Abbreviations",
     "capital": "Capital",
-    "phone-code": "Country Code"
+    "phone-code": "Country Code",
+    "spoken-lang": "spoken languages"
   },
 
   "continent": {

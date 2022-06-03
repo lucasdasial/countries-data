@@ -115,7 +115,7 @@ main {
   overflow: hidden;
   width: 100%;
   height: 100vh;
-  background-image: url(src/assets/svgs/world_map.svg);
+  background-image: url("../assets/svgs/world_map.svg");
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
